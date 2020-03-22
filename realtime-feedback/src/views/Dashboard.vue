@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="dashboard">
     <h1>Here's a summmary of how users feel about your service in realtime</h1>
     <div>
@@ -30,19 +30,7 @@ export default {
   },
   methods: {
     init (){
-      // create a new pusher object
-      this.pusher_obj = new Pusher('PUSHER_APPKEY',{
-          cluster: 'eu',
-          encrypted: true
-      });
-      // create a new channel
-      this.e_channel = this.pusher_obj.subscribe('emotion_channel');
-      // bind the channel to the new event and specify what should be done
-      let self = this;
-      this.e_channel.bind('new_emotion', function(data) {
-        //  increment the counnt for the emotion by one
-        self.emotions[`${data.emotion}`] += 1;
-      });
+    
     },
   },
 }

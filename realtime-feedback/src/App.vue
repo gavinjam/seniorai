@@ -1,6 +1,7 @@
-<template>
+<template>  
   <div id="app">
-    <img alt="Pusher logo" src="./assets/pusher.jpg" height="100px">
+    <h1>AI Tutoring</h1> 
+    <div style='position:absolute; top:20px; right:40px'><a href="http://localhost:3000/logout">Logout</a></div>
     <router-view/>
   </div>
 </template>
