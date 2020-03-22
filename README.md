@@ -1,5 +1,5 @@
-# seniorai
-HighSchool Senior AI project
+# seniorai - HighSchool Senior AI project
+
 ### Run XAMPP
 - Start MySQL server 
 ### Open visual studio code. Open project SeniorAI
